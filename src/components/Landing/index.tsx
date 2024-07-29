@@ -42,9 +42,9 @@ const index = () => {
         />
         <div>
           <h1>
-            <span className="text-2xl font-semibold">👋 Heyy, I'm Slah</span>
+            <span className="text-2xl font-semibold">👋 Heyy, I&apos;m Slah</span>
             <br></br>
-            I'm a Full Stack Developer from{" "}
+            I&apos;m a Full Stack Developer from{" "}
             <span className="underline decoration-4 underline-offset-4 decoration-[#C9FD74] hover:bg-[#C9FD74] hover:ease-in duration-200">
               Tunisia
             </span>{" "}
