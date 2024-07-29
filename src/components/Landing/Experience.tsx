@@ -29,14 +29,14 @@ const Experience = () => {
     },
   ];
   return (
-    <div className={` mb-6`}>
+    <div className={`mb-6`}>
       <h1 className={`${GeistMono.className} font-black text-xl my-6`}>
         Experience
       </h1>
-      {Experiences.map((exp) => {
+      {Experiences.map((exp , index) => {
         return (
           <>
-            <div className=" rounded-lg w-full flex flex-col gap-1 items-start mb-9">
+            <div key={index} className=" rounded-lg w-full flex flex-col gap-1 items-start mb-9">
               <div className="flex flex-col gap-2 rounded-lg transition duration-200 md:hover:bg-opacity-20  md:hover:border-solid border-2 md:hover:border-[#C9FD74] p-3 md:p-6 md:hover:backdrop-blur-md">
                 <div className="w-full flex flex-col text-sm md:text-base">
                   <span className="font-semibold">

@@ -119,10 +119,10 @@ const index = () => {
       </div>
       <div className="rounded-lg transition duration-200 border-solid border-2 hover:border-[#C9FD74] w-full p-3 md:p-6 flex flex-col">
         <ul className="list-none flex flex-wrap break-words text-pretty gap-3 w-auto">
-          {skills.map((skill) =>{
+          {skills.map((skill , index) =>{
             return(
               <>
-                <span className="font-medium">{skill}</span>
+                <span key={index} className="font-medium">{skill}</span>
               </>
             )
           })}
