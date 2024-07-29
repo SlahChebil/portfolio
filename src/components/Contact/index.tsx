@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 "use client";
-import { forwardRef, useEffect, useState } from "react";
+import { forwardRef, Ref, useEffect, useState } from "react";
 import styles from "./style.module.scss";
 import { FaLinkedinIn, FaWhatsapp, FaGithub } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
@@ -9,7 +9,7 @@ import Magnetic from "../magnetic";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const Header = forwardRef(function index(props, ref) {
+const Header = forwardRef(function index(props, ref: Ref<HTMLDivElement>) {
   const [isOpen, setOpen] = useState(true);
   useEffect(() => {
     console.log(isOpen);

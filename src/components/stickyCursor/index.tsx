@@ -71,7 +71,7 @@ export default function index({stickyElement}) {
 
   const manageMouseLeave = e => {
     setIsHovered(false)
-    animate(cursor.current, { scaleX: 1, scaleY: 1 }, {duration: 0.1}, { type: "spring" })
+    animate(cursor.current, { scaleX: 1, scaleY: 1 }, {duration: 0.1 , type : 'spring'})
   }
 
   useEffect( () => {
