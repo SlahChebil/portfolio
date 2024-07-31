@@ -17,7 +17,7 @@ const Experience = () => {
       title: "Frontend Developer",
       linkCompany: "https://www.hortensia-agency.com/#",
       description:
-        "Worked in a large frontend team for developping a SAAS product for project managment. Was responsible for the frontend architecture while fixing major performance issues and the development of new features.",
+        "Worked in a large frontend team for developping a SAAS product for project managment.I Was responsible for the frontend architecture while fixing major performance issues and the development of new features.",
     },
     {
       date: "06/2021 - 08/2021",
