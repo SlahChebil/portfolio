@@ -32,7 +32,7 @@ const index = () => {
   ];
   return (
     <>
-      <div className="flex gap-6 items-center mb-32">
+      <div className="flex flex-col gap-6 items-center mb-32 sm:flex-row">
         <Image
           className="rounded-full border-4 border-[#C9FD74]"
           width={200}
@@ -59,57 +59,57 @@ const index = () => {
       <div className={`${GeistMono.className} mb-6`}>
         <h1 className="font-black text-xl my-6 dark:from-neutral-500">Skills</h1>
         <div>
-          <ul className="flex gap-6">
-            <li className="item p-6 group border-2 rounded-md hover:border-[#C9FD74]">
+          <ul className="flex gap-6 overflow-auto">
+            <li className="min-w-[6rem] item sm:p-6 p-3  group border-2 rounded-md hover:border-[#C9FD74]">
               <Image
                 src={ReactJS}
                 height={30}
-                className="md:grayscale md:group-hover:grayscale-0 select-none h-14 w-14"
+                className="md:grayscale md:group-hover:grayscale-0 select-none h-full w-full"
                 width={30}
                 alt={"NodeJs"}
               ></Image>
             </li>
-            <li className="item p-6 group border-2 rounded-md hover:border-[#C9FD74]">
+            <li className="min-w-[6rem] item sm:p-6 p-3 group border-2 rounded-md hover:border-[#C9FD74]">
               <Image
                 src={AngularIcon}
                 height={60}
-                className="md:grayscale md:group-hover:grayscale-0 select-none h-14 w-14"
+                className="md:grayscale md:group-hover:grayscale-0 select-none h-full w-full"
                 width={60}
                 alt={"NodeJs"}
               ></Image>
             </li>
-            <li className="item p-6 group border-2 rounded-md hover:border-[#C9FD74]">
+            <li className="min-w-[6rem] item sm:p-6 p-3 group border-2 rounded-md hover:border-[#C9FD74]">
               <Image
                 src={RxJS}
                 height={60}
-                className="md:grayscale md:group-hover:grayscale-0 select-none h-14 w-14"
+                className="md:grayscale md:group-hover:grayscale-0 select-none h-full w-full"
                 width={60}
                 alt={"NodeJs"}
               ></Image>
             </li>
-            <li className="item p-6 group border-2 rounded-md hover:border-[#C9FD74]">
+            <li className="min-w-[6rem] item sm:p-6 p-3 group border-2 rounded-md hover:border-[#C9FD74]">
               <Image
                 src={NodeJS}
                 height={60}
-                className="md:grayscale md:group-hover:grayscale-0 select-none h-14 w-14"
+                className="md:grayscale md:group-hover:grayscale-0 select-none h-full w-full"
                 width={60}
                 alt={"NodeJs"}
               ></Image>
             </li>
-            <li className="item p-6 group border-2 rounded-md hover:border-[#C9FD74]">
+            <li className="min-w-[6rem] item sm:p-6 p-3 group border-2 rounded-md hover:border-[#C9FD74]">
               <Image
                 src={NestJs}
                 height={60}
-                className="md:grayscale md:group-hover:grayscale-0 select-none h-14 w-14"
+                className="md:grayscale md:group-hover:grayscale-0 select-none h-full w-full"
                 width={60}
                 alt={"NodeJs"}
               ></Image>
             </li>
-            <li className="item p-6 group border-2 rounded-md hover:border-[#C9FD74]">
+            <li className="min-w-[6rem] item sm:p-6 p-3 group border-2 rounded-md hover:border-[#C9FD74]">
               <Image
                 src={TS}
                 height={60}
-                className="md:grayscale md:group-hover:grayscale-0 select-none h-14 w-14"
+                className="md:grayscale md:group-hover:grayscale-0 select-none h-full w-full"
                 width={60}
                 alt={"NodeJs"}
               ></Image>

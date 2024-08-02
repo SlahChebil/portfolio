@@ -31,7 +31,7 @@ const Experience = () => {
   return (
     <div className={`mb-6`}>
       <h1 className={`${GeistMono.className} font-black text-xl my-6`}>
-        Experience
+        Experiences
       </h1>
       {Experiences.map((exp , index) => {
         return (

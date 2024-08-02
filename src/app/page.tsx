@@ -10,6 +10,7 @@ import Landing from "@/components/Landing";
 import Contact from "@/components/Contact";
 import StickyCursor from "@/components/stickyCursor";
 import { ThemeProvider } from "next-themes";
+import Head from "next/head";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -41,7 +42,7 @@ export default function Home() {
           animate="enter"
           className={styles.landing}
         >
-          <div className="max-w-[50rem] text-[1.1rem] leading-[34px] tracking-[0.9px] m-auto px-[1.45rem] py-6">
+          <div className="w-full max-w-[50rem] text-[1.1rem] leading-[34px] tracking-[0.9px] m-auto px-[1.45rem] py-6">
             <Header></Header>
             <Landing></Landing>
           </div>

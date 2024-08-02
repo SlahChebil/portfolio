@@ -13,31 +13,22 @@ const index = () => {
   const [isDarkMode, setDarkMode] = useState(true);
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const {theme, setTheme} = useTheme()
-  const DownloadPDF = () => {
-    const pdfUrl = "/src/assets/cv-rezgui-aziz.pdf";
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = "resume.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
   // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     setDarkMode(theme === 'dark');
   }, []);
     return (
     <nav
-      className={`w-full mx-auto flex max-w-7xl items-center justify-between py-6 ${GeistMono.className} mb-24`}
+      className={`flex py-6 ${GeistMono.className} mb-24`}
       aria-label="Global"
     >
       <div className="flex items-baseline justify-between w-full">
-        <span>
-          <a href="mailto:sleh.chebil.sc@gmail.com" target="_blank" className={`text-2xl font-bold dark:bg-black`}>
+        <span  className={`mr-11 text-lg font-bold dark:bg-black sm:text-2xl `}>
+          <a href="mailto:sleh.chebil.sc@gmail.com" target="_blank">
             Slah Chebil
           </a>
         </span>
-        <ul className="list-none flex flex-row gap-6 items-center">
+        <ul className="list-none flex flex-row gap-2 sm:gap-8 items-center text-sm sm:text-lg">
           <li className="hover:text-[#C9FD74]">About</li>
           <li>
           <a href='/Resume.pdf' target="_blank" rel="noopener noreferrer" download><button>Resume</button></a>
