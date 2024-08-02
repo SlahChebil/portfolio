@@ -12,10 +12,11 @@ export const metadata: Metadata = {
   description: "Slah Chebil Resume",
 };
 
-export const viewPort : Viewport = {
-  initialScale: 1,
-  width: "device-width",
-};
+// export const viewPort : Viewport = {
+//   initialScale: 1,
+//   width: "device-width",
+
+// };
 
 // width=device-width, initial-scale=1.0
 export default function RootLayout({
@@ -25,6 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <>
+    <Head>
+      <meta name="viewport" content="viewport-fit=cover" />
+    </Head>
       <html lang="en" suppressHydrationWarning>
         <body className={inter.className}>{children}</body>
       </html>
