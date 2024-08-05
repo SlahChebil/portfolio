@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import Image from "next/image";
 import { GeistMono } from "geist/font/mono";
 import AngularIcon from "../../../public/skills/angular.svg";
@@ -28,7 +28,15 @@ const index = () => {
     "CI/CD",
     "Supabase",
     "Firebase",
-    "Gitlab"
+    "Gitlab",
+  ];
+  const Icons: React.JSX.Element[] = [
+    ReactJS,
+    AngularIcon,
+    RxJS,
+    NodeJS,
+    NestJs,
+    TS,
   ];
   return (
     <>
@@ -42,7 +50,9 @@ const index = () => {
         />
         <div>
           <h1>
-            <span className="text-2xl font-semibold">👋 Heyy, I&apos;m Slah</span>
+            <span className="text-2xl font-semibold">
+              👋 Heyy, I&apos;m Slah
+            </span>
             <br></br>
             I&apos;m a Full Stack Developer from{" "}
             <span className="underline decoration-4 underline-offset-4 decoration-[#C9FD74] hover:bg-[#C9FD74] hover:ease-in duration-200">
@@ -57,74 +67,37 @@ const index = () => {
         </div>
       </div>
       <div className={`${GeistMono.className} mb-6`}>
-        <h1 className="font-black text-xl my-6 dark:from-neutral-500">Skills</h1>
+        <h1 className="font-black text-xl my-6 dark:from-neutral-500">
+          Skills
+        </h1>
         <div>
           <ul className="flex gap-6 overflow-auto">
-            <li className="min-w-[6rem] item sm:p-6 p-3  group border-2 rounded-md hover:border-[#C9FD74]">
-              <Image
-                src={ReactJS}
-                height={30}
-                className="md:grayscale md:group-hover:grayscale-0 select-none h-full w-full"
-                width={30}
-                alt={"NodeJs"}
-              ></Image>
-            </li>
-            <li className="min-w-[6rem] item sm:p-6 p-3 group border-2 rounded-md hover:border-[#C9FD74]">
-              <Image
-                src={AngularIcon}
-                height={60}
-                className="md:grayscale md:group-hover:grayscale-0 select-none h-full w-full"
-                width={60}
-                alt={"NodeJs"}
-              ></Image>
-            </li>
-            <li className="min-w-[6rem] item sm:p-6 p-3 group border-2 rounded-md hover:border-[#C9FD74]">
-              <Image
-                src={RxJS}
-                height={60}
-                className="md:grayscale md:group-hover:grayscale-0 select-none h-full w-full"
-                width={60}
-                alt={"NodeJs"}
-              ></Image>
-            </li>
-            <li className="min-w-[6rem] item sm:p-6 p-3 group border-2 rounded-md hover:border-[#C9FD74]">
-              <Image
-                src={NodeJS}
-                height={60}
-                className="md:grayscale md:group-hover:grayscale-0 select-none h-full w-full"
-                width={60}
-                alt={"NodeJs"}
-              ></Image>
-            </li>
-            <li className="min-w-[6rem] item sm:p-6 p-3 group border-2 rounded-md hover:border-[#C9FD74]">
-              <Image
-                src={NestJs}
-                height={60}
-                className="md:grayscale md:group-hover:grayscale-0 select-none h-full w-full"
-                width={60}
-                alt={"NodeJs"}
-              ></Image>
-            </li>
-            <li className="min-w-[6rem] item sm:p-6 p-3 group border-2 rounded-md hover:border-[#C9FD74]">
-              <Image
-                src={TS}
-                height={60}
-                className="md:grayscale md:group-hover:grayscale-0 select-none h-full w-full"
-                width={60}
-                alt={"NodeJs"}
-              ></Image>
-            </li>
+            {Icons.map((Icon, index) => {
+              return (
+                <>
+                  <li className="min-w-[6rem] item p-4  flex justify-center items-center group border-2 rounded-md hover:border-[#C9FD74]" key={index}>
+                    <Image
+                      src={Icon}
+                      className="md:grayscale md:group-hover:grayscale-0 select-none"
+                      alt={"NodeJs"}
+                    ></Image>
+                  </li>
+                </>
+              );
+            })}
           </ul>
         </div>
       </div>
       <div className="rounded-lg transition duration-200 border-solid border-2 hover:border-[#C9FD74] w-full p-3 md:p-6 flex flex-col">
         <ul className="list-none flex flex-wrap break-words text-pretty gap-3 w-auto">
-          {skills.map((skill , index) =>{
-            return(
+          {skills.map((skill, index) => {
+            return (
               <>
-                <span key={index} className="font-medium">{skill}</span>
+                <span key={index} className="font-medium">
+                  {skill}
+                </span>
               </>
-            )
+            );
           })}
         </ul>
       </div>
