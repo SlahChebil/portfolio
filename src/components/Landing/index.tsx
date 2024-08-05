@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { GeistMono } from "geist/font/mono";
 import AngularIcon from "../../../public/skills/angular.svg";
 import NestJs from "../../../public/skills/nestjs.svg";
@@ -8,6 +8,7 @@ import ReactJS from "../../../public/skills/react.svg";
 import RxJS from "../../../public/skills/rxjs.svg";
 import TS from "../../../public/skills/typescript.svg";
 import Experience from "./Experience";
+type IconType = StaticImageData;
 const index = () => {
   const skills = [
     "ReactJs",
@@ -30,7 +31,7 @@ const index = () => {
     "Firebase",
     "Gitlab",
   ];
-  const Icons: React.JSX.Element[] = [
+  const Icons : IconType[]= [
     ReactJS,
     AngularIcon,
     RxJS,
