@@ -57,11 +57,11 @@ const Header = forwardRef(function index(props, ref: Ref<HTMLDivElement>) {
                 <IoIosMail className=" hover:scale-110 ease-in-out" />
               </a>
             </motion.li>
-            <motion.li className="flex justify-center" variants={itemVariants}>
+            {/* <motion.li className="flex justify-center" variants={itemVariants}>
               <a href="https://www.upwork.com/freelancers/~0155d55c3d966b4a42" target="_blank">
                 <FaSquareUpwork className=" hover:scale-110 ease-in-out" />
               </a>
-            </motion.li>
+            </motion.li> */}
             <motion.li className="flex justify-center" variants={itemVariants}>
               <a href="https://wa.me/+21654369281" target="_blank">
                 <FaWhatsapp className=" hover:scale-110 ease-in-out" />

@@ -55,12 +55,12 @@ const index = () => {
               👋 Heyy, I&apos;m Slah
             </span>
             <br></br>
-            I&apos;m a Full Stack Developer from{" "}
-            <span className="underline decoration-4 underline-offset-4 decoration-[#C9FD74] hover:bg-[#C9FD74] hover:ease-in duration-200">
+            Seasoned Full Stack developer with a passion for creating innovative solutions in JavaScript, TypeScript and Java, 
+            My expertise extends to popular frameworks like React.js, Angular, Node.js, Nest.js, and more.
+            {/* I&apos;m a Full Stack Developer from{" "} */}
+            {/* <span className="underline decoration-4 underline-offset-4 decoration-[#C9FD74] hover:bg-[#C9FD74] hover:ease-in duration-200">
               Tunisia
-            </span>{" "}
-            , use JavaScript frameworks for both frontend and backend. I love to
-            work and test other languages like Java & Python.
+            </span>{" "} */}
           </h1>
           <span className="text-sm font-light">
             Web Developer | Contractor | Freelancer
