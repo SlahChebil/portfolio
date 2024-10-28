@@ -28,6 +28,7 @@ export default function RootLayout({
     <>
     <Head>
       <meta name="viewport" content="viewport-fit=cover" />
+      <script defer data-website-id="671f6da5b6741e3ac9fbfb27" data-domain="portfolio-slahs-projects-af0602ac.vercel.app" src="https://datafa.st/js/script.js"></script>
     </Head>
       <html lang="en" suppressHydrationWarning>
         <body className={inter.className}>{children}</body>
