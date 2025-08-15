@@ -7,6 +7,7 @@ import NodeJS from "../../../public/skills/nodejs.svg";
 import ReactJS from "../../../public/skills/react.svg";
 import RxJS from "../../../public/skills/rxjs.svg";
 import TS from "../../../public/skills/typescript.svg";
+import Next from "../../../public/skills/nextjs.svg";
 import Experience from "./Experience";
 type IconType = StaticImageData;
 const index = () => {
@@ -34,6 +35,7 @@ const index = () => {
   const Icons : IconType[]= [
     ReactJS,
     AngularIcon,
+    Next,
     RxJS,
     NodeJS,
     NestJs,
