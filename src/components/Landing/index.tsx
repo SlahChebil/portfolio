@@ -6,7 +6,6 @@ import NestJs from "../../../public/skills/nestjs.svg";
 import NodeJS from "../../../public/skills/nodejs.svg";
 import ReactJS from "../../../public/skills/react.svg";
 import RxJS from "../../../public/skills/rxjs.svg";
-import TS from "../../../public/skills/typescript.svg";
 import Next from "../../../public/skills/nextjs.svg";
 import Experience from "./Experience";
 type IconType = StaticImageData;
@@ -14,17 +13,16 @@ const index = () => {
   const skills = [
     "ReactJs",
     "Angular",
-    "RxJs",
+    "NextJs",
     "Redux",
-    "Saga/Thunk",
+    "RxJs",
     "NgRx",
     "Tailwind",
     "ChakraUI",
-    "Cordova",
     "NodeJs",
     "NestJs",
-    "TypeScript",
-    "JavaScript",
+    "Nx",
+    "Lerna",
     "GraphQL",
     "Jest",
     "CI/CD",
@@ -39,7 +37,6 @@ const index = () => {
     RxJS,
     NodeJS,
     NestJs,
-    TS,
   ];
   return (
     <>
@@ -54,15 +51,10 @@ const index = () => {
         <div>
           <h1>
             <span className="text-2xl font-semibold">
-              👋 Heyy, I&apos;m Slah
+              👋 Hey, I&apos;m Slah
             </span>
             <br></br>
-            Seasoned Full Stack developer with a passion for creating innovative solutions in JavaScript, TypeScript and Java.
-            My expertise extends to popular frameworks like React.js, Angular, Node.js, Nest.js, and more.
-            {/* I&apos;m a Full Stack Developer from{" "} */}
-            {/* <span className="underline decoration-4 underline-offset-4 decoration-[#C9FD74] hover:bg-[#C9FD74] hover:ease-in duration-200">
-              Tunisia
-            </span>{" "} */}
+            Fullstack developer with 3+ years of experience crafting scalable frontend and backend applications. Skilled in the JavaScript ecosystem: React, React Native, Next.js, NestJS, Nx, Angular, and TypeScript—with a strong focus on clean, efficient code and user-centric solutions.
           </h1>
           <span className="text-sm font-light">
             Web Developer | Contractor | Freelancer
